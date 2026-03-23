@@ -2,25 +2,25 @@ class Gl < Formula
   desc "Decentralized Git CLI with DID-based identity and IPFS storage"
   homepage "https://gitlawb.com"
   license "MIT"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/gitlawb/releases/releases/download/v#{version}/gitlawb-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "9792d9f97dcf788a52873e5dad666a9d1bdc3505da5355220eac565fbf6f1b7f"
+      sha256 "36f661366d25667b85ea15df916e7c3b19c643fe4c1801478c3ee42ceea57e6c"
     else
       url "https://github.com/gitlawb/releases/releases/download/v#{version}/gitlawb-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "ed302c67bba4b109d5e422eee91d2a8919186fd41a26f783fc3d81afa95ec726"
+      sha256 "4d4c538d040cbfe3c39ba1da8ba6ffaa8026a94b8edfbe198570f08db028e0f9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/gitlawb/releases/releases/download/v#{version}/gitlawb-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "e032839a78f979d561f209403889d31995ea948af0c392923795c9dacfa9a1ef"
+      sha256 "a9e706da8099fd843efaf75ff1c52e8e3505996a67eaf55a969e63d5b84036d3"
     else
       url "https://github.com/gitlawb/releases/releases/download/v#{version}/gitlawb-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7dbb87623a126e17221ca79f663a9c24372080f1cfdc34d7ac52e6a5a1b1f723"
+      sha256 "108a09e34482a1fc58aa8911a8aef0a57a0af075c59f62a1a379e1a30d0db323"
     end
   end
 
